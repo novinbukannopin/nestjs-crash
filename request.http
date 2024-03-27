@@ -1,0 +1,36 @@
+### GET SONGS
+GET http://localhost:3000/songs
+
+### GET SONG
+GET http://localhost:3000/songs/2
+
+### DELETE SONG
+DELETE http://localhost:3000/songs/4
+
+### POST SONG
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Dancing Queen",
+  "artists": [
+    "ABBA"
+  ],
+  "releasedDate": "1976-08-15",
+  "duration": "3:51",
+  "lyrics": "You can dance you can jive having the time of your life"
+}
+
+### PUT SONG
+PUT http://localhost:3000/songs/3
+Content-Type: application/json
+
+{
+  "title": "Dancing Doni",
+  "artists": [
+    "ABBA"
+  ],
+  "releasedDate": "1976-08-15",
+  "duration": "3:51",
+  "lyrics": "You can dance you can jive having the time of your life"
+}
