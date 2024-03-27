@@ -47,3 +47,12 @@ Content-Type: application/json
   "email": "admin@solomon.id",
   "password": "adminadmin"
 }
+
+### LOGIN USERS
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "admin@solomon.id",
+  "password": "adminadmin"
+}
