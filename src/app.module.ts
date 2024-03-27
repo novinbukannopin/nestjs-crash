@@ -6,6 +6,8 @@ import { LoggerMiddleware } from "./common/middleware/logger.middleware";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { DataSource } from "typeorm";
 import { Song } from "./songs/entities/song.entity";
+import { Artist } from "./artists/artists.entity";
+import { User } from "./users/user.entity";
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -14,7 +16,7 @@ import { Song } from "./songs/entities/song.entity";
     host: "ep-floral-glade-a1xtdkzb.ap-southeast-1.aws.neon.tech",
     username: "novinbukannopin",
     password: "zX3n0KYeNlpP",
-    entities: [Song],
+    entities: [Song, Artist, User],
     synchronize: true,
     ssl: true
   }), SongsModule],
