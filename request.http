@@ -12,11 +12,11 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "Dancing Queen",
+  "title": "Tahun 2000",
   "artists": [
     "ABBA"
   ],
-  "releasedDate": "1976-08-15",
+  "releasedDate": "2000-08-15",
   "duration": "3:51",
   "lyrics": "You can dance you can jive having the time of your life"
 }
