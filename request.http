@@ -12,7 +12,7 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "Lagu Novin",
+  "title": "Lagu Admin",
   "artists": [
     1
   ],
@@ -33,4 +33,17 @@ Content-Type: application/json
   "releasedDate": "1976-08-15",
   "duration": "3:51",
   "lyrics": "You can dance you can jive having the time of your life"
+}
+
+
+### USERS
+### REGISTER USERS
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "firstName": "Admin",
+  "lastName": "Super",
+  "email": "admin@solomon.id",
+  "password": "adminadmin"
 }

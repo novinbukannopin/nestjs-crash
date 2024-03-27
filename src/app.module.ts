@@ -7,7 +7,9 @@ import { TypeOrmModule } from "@nestjs/typeorm";
 import { DataSource } from "typeorm";
 import { Song } from "./songs/entities/song.entity";
 import { Artist } from "./artists/artists.entity";
-import { User } from "./users/user.entity";
+import { User } from "./users/entities/user.entity";
+import { AuthModule } from "./auth/auth.module";
+import { UsersModule } from "./users/users.module";
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -19,7 +21,7 @@ import { User } from "./users/user.entity";
     entities: [Song, Artist, User],
     synchronize: true,
     ssl: true
-  }), SongsModule],
+  }), SongsModule, AuthModule, UsersModule],
   controllers: [AppController],
   providers: [AppService]
 })

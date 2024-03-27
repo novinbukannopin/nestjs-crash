@@ -1,4 +1,4 @@
-import { User } from "src/users/user.entity";
+import { User } from "src/users/entities/user.entity";
 import { Entity, JoinColumn, ManyToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Song } from "../songs/entities/song.entity";
 
