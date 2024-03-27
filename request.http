@@ -56,3 +56,7 @@ Content-Type: application/json
   "email": "admin@solomon.id",
   "password": "adminadmin"
 }
+
+### PROFILE
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHNvbG9tb24uaWQiLCJzdWIiOjIsImlhdCI6MTcxMTUyOTk1NiwiZXhwIjoxNzExNTMzNTU2fQ.XcyBCNUgZiB2Iu3eSAgGs9OJn2hV0CV7mqOV-LgLX1w

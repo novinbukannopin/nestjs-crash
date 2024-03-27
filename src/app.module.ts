@@ -10,6 +10,7 @@ import { Artist } from "./artists/artists.entity";
 import { User } from "./users/entities/user.entity";
 import { AuthModule } from "./auth/auth.module";
 import { UsersModule } from "./users/users.module";
+import { JwtModule } from "@nestjs/jwt";
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -21,7 +22,10 @@ import { UsersModule } from "./users/users.module";
     entities: [Song, Artist, User],
     synchronize: true,
     ssl: true
-  }), SongsModule, AuthModule, UsersModule],
+  }), JwtModule.register({
+    secret: "novinimut"
+  }),
+    SongsModule, AuthModule, UsersModule],
   controllers: [AppController],
   providers: [AppService]
 })
