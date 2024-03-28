@@ -9,12 +9,13 @@ DELETE http://localhost:3000/songs/4
 
 ### POST SONG
 POST http://localhost:3000/songs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdmluQHNvbG9tb24uaWQiLCJ1c2VySWQiOjQsImFydGlzdElkIjoyLCJpYXQiOjE3MTE2MDA1MjUsImV4cCI6MTcxMTYwNDEyNX0.AYZ7xqRRo2LCS9qjw5-C2jUSqhGffbLEr6xRCY_zU20
 Content-Type: application/json
 
 {
-  "title": "Lagu Admin",
+  "title": "Lagu 3",
   "artists": [
-    1
+    2
   ],
   "releasedDate": "2003-09-07",
   "duration": "3:51",
@@ -42,10 +43,10 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "firstName": "Admin",
-  "lastName": "Super",
-  "email": "admin@solomon.id",
-  "password": "adminadmin"
+  "firstName": "novin",
+  "lastName": "ardian",
+  "email": "novin@solomon.id",
+  "password": "novinnovin"
 }
 
 ### LOGIN USERS
@@ -53,10 +54,14 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "email": "admin@solomon.id",
-  "password": "adminadmin"
+  "email": "novin@solomon.id",
+  "password": "novinnovin"
 }
 
 ### PROFILE
 GET http://localhost:3000/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHNvbG9tb24uaWQiLCJzdWIiOjIsImlhdCI6MTcxMTUyOTk1NiwiZXhwIjoxNzExNTMzNTU2fQ.XcyBCNUgZiB2Iu3eSAgGs9OJn2hV0CV7mqOV-LgLX1w
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHNvbG9tb24uaWQiLCJzdWIiOjIsImlhdCI6MTcxMTU5NjYzNywiZXhwIjoxNzExNjAwMjM3fQ.H3RUenG7zafdeosKQoAZnX3Jjx-6Tox2q2QwvnZNC0o
+
+### PROFILE
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHNvbG9tb24uaWQiLCJzdWIiOjIsImlhdCI6MTcxMTU5NjYzNywiZXhwIjoxNzExNjAwMjM3fQ.H3RUenG7zafdeosKQoAZnX3Jjx-6Tox2q2QwvnZNC0o

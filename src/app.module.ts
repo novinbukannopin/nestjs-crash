@@ -11,6 +11,7 @@ import { User } from "./users/entities/user.entity";
 import { AuthModule } from "./auth/auth.module";
 import { UsersModule } from "./users/users.module";
 import { JwtModule } from "@nestjs/jwt";
+import { ArtistsModule } from './artists/artists.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -25,7 +26,7 @@ import { JwtModule } from "@nestjs/jwt";
   }), JwtModule.register({
     secret: "novinimut"
   }),
-    SongsModule, AuthModule, UsersModule],
+    SongsModule, AuthModule, UsersModule, ArtistsModule],
   controllers: [AppController],
   providers: [AppService]
 })
