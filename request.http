@@ -65,3 +65,21 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQ
 ### PROFILE
 GET http://localhost:3000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHNvbG9tb24uaWQiLCJzdWIiOjIsImlhdCI6MTcxMTU5NjYzNywiZXhwIjoxNzExNjAwMjM3fQ.H3RUenG7zafdeosKQoAZnX3Jjx-6Tox2q2QwvnZNC0o
+
+### ENABLE 2FA
+GET http://localhost:3000/auth/enable-2fa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdmluQHNvbG9tb24uaWQiLCJ1c2VySWQiOjQsImFydGlzdElkIjoyLCJpYXQiOjE3MTIyMDAwMjEsImV4cCI6MTcxMjIwMzYyMX0.ZhK3iHVLVPM94Z2GMu8WcsbfZWow3z6z9AX1vHs_FJA
+
+### VERIFY 2FA
+POST http://localhost:3000/auth/verify-2fa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdmluQHNvbG9tb24uaWQiLCJ1c2VySWQiOjQsImFydGlzdElkIjoyLCJpYXQiOjE3MTIyMDAwMjEsImV4cCI6MTcxMjIwMzYyMX0.ZhK3iHVLVPM94Z2GMu8WcsbfZWow3z6z9AX1vHs_FJA
+Content-Type: application/json
+
+{
+  "token": "186708"
+}
+
+### DISABLE 2FA
+GET http://localhost:3000/auth/disable-2fa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdmluQHNvbG9tb24uaWQiLCJ1c2VySWQiOjQsImFydGlzdElkIjoyLCJpYXQiOjE3MTIyMDAwMjEsImV4cCI6MTcxMjIwMzYyMX0.ZhK3iHVLVPM94Z2GMu8WcsbfZWow3z6z9AX1vHs_FJA
+

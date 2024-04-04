@@ -3,3 +3,7 @@ export interface PayloadTypes {
   userId: number;
   artistId?: number;
 }
+
+export type Enable2FA = {
+  secret: string;
+}
