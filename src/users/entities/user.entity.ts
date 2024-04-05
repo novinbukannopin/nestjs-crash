@@ -16,6 +16,9 @@ export class User {
   email: string;
 
   @Column()
+  apiKey: string;
+
+  @Column()
   @Exclude()
   password: string;
 
