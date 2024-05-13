@@ -5,25 +5,14 @@ import { SongsModule } from "./songs/songs.module";
 import { LoggerMiddleware } from "./common/middleware/logger.middleware";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { DataSource } from "typeorm";
-import { Song } from "./songs/entities/song.entity";
-import { Artist } from "./artists/artists.entity";
-import { User } from "./users/entities/user.entity";
 import { AuthModule } from "./auth/auth.module";
 import { UsersModule } from "./users/users.module";
 import { JwtModule } from "@nestjs/jwt";
-import { ArtistsModule } from './artists/artists.module';
+import { ArtistsModule } from "./artists/artists.module";
+import { dataSourceOptions } from "../database/data-source";
 
 @Module({
-  imports: [TypeOrmModule.forRoot({
-    type: "postgres",
-    database: "spotify",
-    host: "ep-floral-glade-a1xtdkzb.ap-southeast-1.aws.neon.tech",
-    username: "novinbukannopin",
-    password: "zX3n0KYeNlpP",
-    entities: [Song, Artist, User],
-    synchronize: true,
-    ssl: true
-  }), JwtModule.register({
+  imports: [TypeOrmModule.forRoot(dataSourceOptions), JwtModule.register({
     secret: "novinimut"
   }),
     SongsModule, AuthModule, UsersModule, ArtistsModule],

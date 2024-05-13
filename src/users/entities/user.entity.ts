@@ -22,6 +22,9 @@ export class User {
   @Exclude()
   password: string;
 
+  @Column()
+  phoneNumber: string;
+
   @Column({ nullable: true, type: "text" })
   twoFASecret: string;
 
