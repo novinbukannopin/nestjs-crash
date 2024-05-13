@@ -36,5 +36,5 @@ jobs:
             git pull
             git status
             pnpm install --only=prod
-            pnpm dlx prisma migrate deploy
-            pm2 restart solomon-s3
+            pnpm build
+            pm2 restart nestjs-crash
