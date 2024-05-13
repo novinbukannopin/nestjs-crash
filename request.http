@@ -86,3 +86,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdmluQ
 ### API KEY
 GET http://localhost:3000/auth/profile
 Authorization: Bearer 3a77e106-506b-45cd-997e-fa3132321791
+
+### API KEY
+GET http://localhost:3000/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdmluQHNvbG9tb24uaWQiLCJ1c2VySWQiOjgsImlhdCI6MTcxNTU3NTM3MCwiZXhwIjoxNzE1NTc4OTcwfQ.rw_xwmYWklqiyYsVQckGOhjrROTBZPXV3IZikh5RyBc

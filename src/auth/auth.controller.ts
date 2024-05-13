@@ -51,4 +51,15 @@ export class AuthController {
       user: req.user
     };
   }
+
+  @Get("me")
+  @UseGuards(JwtGuard)
+  getMe(@Request() req) {
+    delete req.user.password;
+    return {
+      msg: "authenticated user by api key",
+      user: req.user
+    };
+  }
+
 }

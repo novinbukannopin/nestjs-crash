@@ -30,8 +30,6 @@ export class AuthService {
 
       const artist = await this.artistsService.findArtist(user.id);
 
-      console.log(user.enable2FA, user.twoFASecret);
-
       if (artist) {
         payload.artistId = artist.id;
       }
